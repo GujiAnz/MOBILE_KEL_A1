@@ -18,13 +18,31 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".cart1"
+            android:exported="false" />
+        <activity
+            android:name=".search"
+            android:exported="false" />
+        <activity
+            android:name=".akun_saya"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Keranjang"
+            android:exported="false" />
+        <activity
+            android:name=".deskripsibarang"
+            android:exported="false" />
+        <activity
+            android:name=".HomeCelana"
+            android:exported="false" />
+        <activity
             android:name=".about"
             android:exported="false" />
         <activity
             android:name=".profil"
-            android:exported="false" />
-        <activity
-            android:name=".Home"
             android:exported="false" />
         <activity
             android:name=".Login"

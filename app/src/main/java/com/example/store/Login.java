@@ -45,7 +45,9 @@ public class Login extends AppCompatActivity {
 //                            editor.putBoolean("status", true);
 //                            editor.commit();
                             Toast.makeText(Login.this, "Berhasil Login", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(getApplicationContext(),Home.class);
+
+                            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                            intent.putExtra("user",username.getText().toString());
                             startActivity(intent);
                         } else if (kode == 0) {
                             Toast.makeText(Login.this, "Gagal Login", Toast.LENGTH_SHORT).show();

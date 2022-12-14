@@ -1,4 +1,4 @@
-package com.example.store;
+package Adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,14 +9,20 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.store.ModelBaju;
+import com.example.store.R;
+
 import java.util.List;
 
-public class AdapterBaju  extends RecyclerView.Adapter<AdapterBaju.ViewHolder> {
+public class AdapterBaju  extends RecyclerView.Adapter<AdapterBaju.ViewHolder>   {
 
     List<ModelBaju> listBaju;
+    ItemClickListener adapetrinterfaceListener;
 
-    public AdapterBaju(List<ModelBaju> listBaju) {
+    public AdapterBaju(List<ModelBaju> listBaju,
+                       ItemClickListener adapetrinterfaceListener) {
         this.listBaju = listBaju;
+        this.adapetrinterfaceListener = adapetrinterfaceListener;
     }
 
     @NonNull
@@ -34,11 +40,17 @@ public class AdapterBaju  extends RecyclerView.Adapter<AdapterBaju.ViewHolder> {
     }
 
     @Override
+
+
     public int getItemCount() {
         return listBaju.size();
     }
 
-    public class ViewHolder  extends RecyclerView.ViewHolder{
+    public  interface ItemClickListener{
+        void clikcbajuListener(int posisi);
+
+    }
+    public class ViewHolder  extends RecyclerView.ViewHolder implements View.OnClickListener{
         TextView namaItem , hargaItem;
         ImageView gambarItem;
         public ViewHolder(@NonNull View itemView) {
@@ -46,6 +58,12 @@ public class AdapterBaju  extends RecyclerView.Adapter<AdapterBaju.ViewHolder> {
             namaItem = itemView.findViewById(R.id.id_adapter_nama_baju);
             hargaItem = itemView.findViewById(R.id.id_adapter_harga_baju);
             gambarItem = itemView.findViewById(R.id.id_adapter_img);
+            itemView.setOnClickListener(this::onClick);
+        }
+
+        @Override
+        public void onClick(View view) {
+            adapetrinterfaceListener.clikcbajuListener(getAdapterPosition());
         }
     }
 }

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".deskripsibarang">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardatas"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginBottom="355dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="39dp"
+        app:cardElevation="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/deskaos"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="350dp"
+            android:elevation="100dp"
+            android:src="@drawable/img_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="125dp"
+        android:layout_marginBottom="280dp"
+        android:text="Deskripsi Produk"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardatas"
+        app:layout_constraintVertical_bias="1.0">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtuk"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="125dp"
+        android:layout_marginBottom="220dp"
+        android:textColor="@color/btn"
+        android:text="Ukuran : XL"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtbahan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:layout_marginStart="45dp"
+        android:text="Bahan  : Katun"
+        android:textColor="@color/btn"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtuk"
+        app:layout_constraintVertical_bias="1.0">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtasal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="125dp"
+        android:layout_marginBottom="125dp"
+        android:textColor="@color/btn"
+        android:text="Warna  : Putih"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtbahan">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/nmBrg"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="WHITE SWEATER"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="25dp"
+        android:textColor="@color/btn"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardatas" />
+
+    <TextView
+        android:id="@+id/hargaBajuu"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="255dp"
+        android:layout_marginTop="30dp"
+        android:text="Rp.100.000"
+        android:textColor="#d17740"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardatas" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:elevation="100dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:cardBackgroundColor="#EFE7E7"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardatas">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="20dp"
+            android:text="Beli Sekarang"
+            android:textSize="25dp">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/tokeranjang"
+            android:layout_width="35dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_shopping_cart_checkout_24">
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
